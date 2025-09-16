@@ -1,0 +1,67 @@
+[gd_resource type="SpriteFrames" load_steps=10 format=3 uid="uid://dtw1cuihkx1iq"]
+
+[ext_resource type="Texture2D" uid="uid://cky5p5c6so0a4" path="res://Assets/Actor/Flying Eye/Flight.png" id="1_8nwth"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6yvyl"]
+atlas = ExtResource("1_8nwth")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hxaml"]
+atlas = ExtResource("1_8nwth")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hmlmw"]
+atlas = ExtResource("1_8nwth")
+region = Rect2(300, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4fmlj"]
+atlas = ExtResource("1_8nwth")
+region = Rect2(450, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fnrss"]
+atlas = ExtResource("1_8nwth")
+region = Rect2(600, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1quw5"]
+atlas = ExtResource("1_8nwth")
+region = Rect2(750, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_do3qk"]
+atlas = ExtResource("1_8nwth")
+region = Rect2(900, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uwy2o"]
+atlas = ExtResource("1_8nwth")
+region = Rect2(1050, 0, 150, 150)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6yvyl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hxaml")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hmlmw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4fmlj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fnrss")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1quw5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_do3qk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uwy2o")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 7.0
+}]

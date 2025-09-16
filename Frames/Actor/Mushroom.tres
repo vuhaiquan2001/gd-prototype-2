@@ -1,0 +1,39 @@
+[gd_resource type="SpriteFrames" load_steps=6 format=3 uid="uid://bls1lc82amgoe"]
+
+[ext_resource type="Texture2D" uid="uid://cctd42vn5hcv1" path="res://Assets/Actor/Mushroom/Idle.png" id="1_i56ni"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ypxi4"]
+atlas = ExtResource("1_i56ni")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qprpj"]
+atlas = ExtResource("1_i56ni")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6tkfg"]
+atlas = ExtResource("1_i56ni")
+region = Rect2(300, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rt7nv"]
+atlas = ExtResource("1_i56ni")
+region = Rect2(450, 0, 150, 150)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ypxi4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qprpj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6tkfg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rt7nv")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]

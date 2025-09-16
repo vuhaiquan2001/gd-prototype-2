@@ -1,0 +1,22 @@
+[
+  {
+	"id": "goblin",
+	"name": "Goblin",
+	"frames": "res://Frames/Actor/Goblin.tres"
+  },
+  {
+	"id": "skeleton",
+	"name": "Skeleton",
+	"frames": "res://Frames/Actor/Skeleton.tres"
+  },
+  {
+	"id": "mushroom",
+	"name": "Mushroom",
+	"frames": "res://Frames/Actor/Mushroom.tres"
+  },
+  {
+	"id": "flying_eye",
+	"name": "Flying Eye",
+	"frames": "res://Frames/Actor/FlyingEye.tres"
+  }
+]

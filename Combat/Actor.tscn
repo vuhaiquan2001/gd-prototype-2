@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://ns8puxkbk63i"]
+
+[ext_resource type="Script" uid="uid://ybxpcg2mex3e" path="res://Combat/Actor.gd" id="1_hqmpw"]
+[ext_resource type="Texture2D" uid="uid://ckksc7ool5o3a" path="res://Assets/Actor/Goblin/Idle.png" id="2_hqmpw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ncv8c"]
+atlas = ExtResource("2_hqmpw")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_48tpx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ncv8c")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Actor" type="Node2D"]
+script = ExtResource("1_hqmpw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_48tpx")
