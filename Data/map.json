@@ -1,7 +1,16 @@
 {
-	"map_1": {
-		"layer1": "",
-		"layer2": "",
-		"layer3": "",
-	}
+  "map_1": {
+    "layer1": "res://Assets/Background/Layer_0000_9.png",
+    "layer2": "res://Assets/Background/Layer_0001_8.png",
+    "layer3": "res://Assets/Background/Layer_0002_7.png",
+    "layer4": "res://Assets/Background/Layer_0003_6.png",
+    "layer5": "res://Assets/Background/Layer_0004_Lights.png",
+    "layer6": "res://Assets/Background/Layer_0005_5.png",
+    "layer7": "res://Assets/Background/Layer_0006_4.png",
+    "layer8": "res://Assets/Background/Layer_0007_Lights.png",
+    "layer9": "res://Assets/Background/Layer_0008_3.png",
+    "layer10": "res://Assets/Background/Layer_0009_2.png",
+    "base1": "res://Assets/Background/Layer_0010_1.png",
+    "base2": "res://Assets/Background/Layer_0011_0.png"
+  }
 }

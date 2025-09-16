@@ -1,7 +1,7 @@
 extends Node2D
 # Preload actor scene để tối ưu performance 
 @onready var actor_scene = preload("res://Combat/Actor.tscn") 
-@onready var parallax_scene = preload("res://Combat/ParallaxLayer.tscn")
+@onready var background = preload("res://Combat/Background.tscn") 
 
 func _ready() -> void:
 	load_background()
@@ -27,5 +27,10 @@ func spawn_actor(monster, index) -> void:
 	else:
 		print("Actor scene not found")
 
-func load_background():
-	print('load parallax')
+func load_background() -> void:
+	if background:
+		print("Load")
+		var bg = background.instantiate()
+		add_child(bg)
+	else:
+		print("Background scene not found")
