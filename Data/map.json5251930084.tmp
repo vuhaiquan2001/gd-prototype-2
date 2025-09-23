@@ -1,8 +1,10 @@
 {
+
 	"skys": "res://Assets/Background/sky.png",
 	"far_clouds": "res://Assets/Background/far-clouds.png",
 	"near_clouds": "res://Assets/Background/near-clouds.png",
 	"far_moundtains": "res://Assets/Background/far-mountains.png",
 	"far_moundtains": "res://Assets/Background/mountains.png",
 	"trees": "res://Assets/Background/trees.png ",
+  
 }
