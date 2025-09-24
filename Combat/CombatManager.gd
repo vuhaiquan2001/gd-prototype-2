@@ -19,7 +19,11 @@ func spawn_actor(monster, index) -> void:
 	print("Actor spawn ", monster.name)
 	if actor_scene:
 		var actor = actor_scene.instantiate() as Actor
-		actor.position = Vector2( 100 + index * 80  ,  300)
+		# Tính toán vị trí dựa trên kích thước màn hình
+		var screen_size = get_viewport_rect().size
+		var actor_x = screen_size.x * 0.1 + index * (screen_size.x * 0.1)  # Bắt đầu từ 10% màn hình, cách nhau 8%
+		var actor_y = screen_size.y * 0.8  # Đặt ở 60% chiều cao màn hình
+		actor.position = Vector2(actor_x, actor_y)
 		add_child(actor)	
 		if actor.has_method('load_sprite'):
 			actor.load_sprite(monster.frames)
@@ -62,5 +66,5 @@ func fit_sprite_fullscreen(sprite: Sprite2D) -> void:
 		var screen_size = get_viewport_rect().size
 		var scale_x = screen_size.x / tex_size.x
 		var scale_y = screen_size.y / tex_size.y
-		print(scale_x, scale_y)
+		print(scale_x, 1.0)
 		sprite.scale = Vector2(scale_x, scale_y)
