@@ -1,8 +1,26 @@
 {
-	"skys": "res://Assets/Background/sky.png",
-	"far_clouds": "res://Assets/Background/far-clouds.png",
-	"near_clouds": "res://Assets/Background/near-clouds.png",
-	"far_moundtains": "res://Assets/Background/far-mountains.png",
-	"near_moundtains": "res://Assets/Background/mountains.png",
-	"trees": "res://Assets/Background/trees.png",
+  "skys": {
+	"path": "res://Assets/Background/sky.png",
+	"scroll_scale_x": 0.0
+  },
+  "far_clouds": {
+	"path": "res://Assets/Background/far-clouds.png",
+	"scroll_scale_x": 0.2
+  },
+  "near_clouds": {
+	"path": "res://Assets/Background/near-clouds.png",
+	"scroll_scale_x": 0.3
+  },
+  "far_mountains": {
+	"path": "res://Assets/Background/far-mountains.png",
+	"scroll_scale_x": 0.5
+  },
+  "near_mountains": {
+	"path": "res://Assets/Background/mountains.png",
+	"scroll_scale_x": 0.6
+  },
+  "trees": {
+	"path": "res://Assets/Background/trees.png",
+	"scroll_scale_x": 0.8
+  }
 }

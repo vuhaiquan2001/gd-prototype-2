@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://caqu8vvp58sdq"]
+
+[ext_resource type="Script" uid="uid://iftww06f72ib" path="res://Combat/Party.gd" id="1_53tnp"]
+
+[node name="Party" type="Node2D"]
+script = ExtResource("1_53tnp")
