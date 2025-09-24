@@ -41,12 +41,12 @@ func load_background() -> void:
 				var tex = load(map_data[key])
 				if tex:
 					sprite.texture = tex
-					# Full width screen sprite
-					fit_sprite_fullscreen(sprite)
-					# Tuỳ chỉnh sprite (fit màn hình chẳng hạn)
+					# Đặt tắt center offset
+					sprite.centered = false
+					# Đặt position về vector 0
 					sprite.position = Vector2.ZERO
-					sprite.scale = Vector2(1, 1) # tuỳ chỉnh cho vừa màn hình
-					
+					# Full width screen sprite - phải gọi sau khi set texture
+					fit_sprite_fullscreen(sprite)
 					# Tuỳ chỉnh motion của parallax
 					parallax.scroll_scale = Vector2(0.5, 1) # layer này cuộn chậm hơn
 				# Thêm parallax layer vào node cha (giả sử self là ParallaxBackground)
@@ -62,5 +62,5 @@ func fit_sprite_fullscreen(sprite: Sprite2D) -> void:
 		var screen_size = get_viewport_rect().size
 		var scale_x = screen_size.x / tex_size.x
 		var scale_y = screen_size.y / tex_size.y
+		print(scale_x, scale_y)
 		sprite.scale = Vector2(scale_x, scale_y)
-		sprite.position = screen_size / 2   # căn giữa
